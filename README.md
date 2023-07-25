@@ -728,7 +728,7 @@ Chain of Thought Prompting is a method where prompts guide a LLM through a line 
 Examples:
 
 <figure>
-<img width="800" alt="chain-of-thought-examples" src="./images/chains-of-thought.png">
+  <img width="800" alt="chain-of-thought-examples" src="./images/chains-of-thought.png">
   <figcaption>Examples of ⟨input, chain-of-thought, output⟩ triples for arithmetic, commonsense, and symbolic reasoning benchmarks. Chains of thought are highlighted.</figcaption>
 </figure>  
 
@@ -741,12 +741,12 @@ ReAct combines reasoning and actions to improve how LLMs think and make decision
 Examples:
 
 <figure>
-<img width="1000" alt="ReAct comparison" src="./images/react-prompt-comparisons-1.png">
+  <img width="1000" alt="ReAct comparison" src="./images/react-prompt-comparisons-1.png">
   <figcaption>Comparison of 4 prompting methods, (a) Standard, (b) Chain-of-thought (CoT, Reason Only), (c) Act-only, and (d) ReAct (Reason+Act), solving a HotpotQA (Yang et al., 2018) question.</figcaption>
 </figure>
 
 <figure>
-<img width="1000" alt="ReAct comparison" src="./images/react-prompt-comparisons-2.png">
+  <img width="1000" alt="ReAct comparison" src="./images/react-prompt-comparisons-2.png">
   <figcaption>Comparison of (a) Act-only and (b) ReAct prompting to solve an AlfWorld (Shridhar et al., 2020b) game.</figcaption>
 </figure>  
 
