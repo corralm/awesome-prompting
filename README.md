@@ -705,6 +705,7 @@ Examples:
 ```text
 Question: "What is the capital of the United States?"
 Answer: "The capital of the United States is Washington D.C."
+
 Question: "What is the capital of France?"
 Answer: 
 ```
@@ -729,7 +730,7 @@ Examples:
 <figure>
 <img width="800" alt="chain-of-thought-examples" src="./images/chains-of-thought.png">
   <figcaption>Examples of ⟨input, chain-of-thought, output⟩ triples for arithmetic, commonsense, and symbolic reasoning benchmarks. Chains of thought are highlighted.</figcaption>
-</figure>
+</figure>  
 
 See Figure 3: [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/pdf/2201.11903.pdf)
 
@@ -747,7 +748,7 @@ Examples:
 <figure>
 <img width="1000" alt="ReAct comparison" src="./images/react-prompt-comparisons-2.png">
   <figcaption>Comparison of (a) Act-only and (b) ReAct prompting to solve an AlfWorld (Shridhar et al., 2020b) game.</figcaption>
-</figure>
+</figure>  
 
 See Figure 1: [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2210.03629.pdf).
 
