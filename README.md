@@ -74,11 +74,13 @@ Explain the importance of eating vegetables to me. Assume that I am a skeptical 
 ```
 
 ```text
-Explain the plot of the "Game of Thrones" series to me. Assume that I am someone who has never watched a single episode.
+Explain the plot of the "Game of Thrones" series to me.
+Assume that I am someone who has never watched a single episode.
 ```
 
 ```text
-Explain the process of photosynthesis. Assume that I am a curious elementary school student.
+Explain the process of photosynthesis.
+Assume that I am a curious elementary school student.
 ```
 
 #### Output Automator Pattern
@@ -91,21 +93,26 @@ Contextual statements:
 Examples:
 
 ```text
-From now on, whenever you create a weekly meal plan with various ingredients for each meal, generate a Python script that will automatically populate a shopping list with the necessary ingredients.
+From now on, whenever you create a meal plan with various ingredients for each meal,
+generate a Python script that will automatically populate a shopping list with the ingredients.
 
 The list should adjust quantities based on the number of servings specified. 
 ```
 
 ```text
-From now on, whenever you generate a study schedule for my upcoming exams, produce a series of Google Calendar events that correspond to each study session.
+From now on, whenever you generate a study schedule for my upcoming exams,
+produce a series of Google Calendar events that correspond to each study session.
 
-Each event should include the subject, study focus, and duration of the study session. The artifact should be a Google Calendar event.
+Each event should include the subject, study focus, and duration of the study session.
+The artifact should be a Google Calendar event.
 ```
 
 ```text
-Whenever you generate a list of contacts from networking events I've attended, create a Salesforce script that will automatically update or add these contacts to my CRM.
+Whenever you generate a list of contacts from networking events I've attended,
+create a Salesforce script that will automatically update or add these contacts to my CRM.
 
-Each entry should include the contact's name, company, role, and any notes I took during our conversation. The artifact should be a script compatible with Salesforce.
+Each entry should include the contact's name, company, and role.
+The artifact should be a script compatible with Salesforce.
 ```
 
 #### Visualization Generator Pattern
@@ -117,21 +124,27 @@ Contextual statements:
 Examples:
 
 ```text
-Whenever we are discussing a data distribution or statistical information, generate Python code using matplotlib or seaborn libraries to create a corresponding plot.
+Whenever we are discussing a data distribution or statistical information,
+generate Python code using matplotlib or seaborn libraries to create a corresponding plot.
 
-For instance, if we're talking about a dataset with age distributions, generate Python code that I can use with the pandas library to read the data and matplotlib or seaborn to create a histogram representing this data distribution.
+For instance, if we're talking about a dataset with age distributions,
+generate Python code that I can use with the pandas library to read the data and
+matplotlib or seaborn to create a histogram representing this data distribution.
 ```
 
 ```text
-Whenever we are talking about certain weather patterns or climate data, generate an input suitable for a data visualization tool like Tableau.
+Whenever we are talking about certain weather patterns or climate data, 
+generate an input suitable for a data visualization tool like Tableau.
 
-For instance, if we're discussing annual rainfall data for different regions, generate a CSV file structure that I can then populate with data and use in Tableau to create a bar graph or other relevant visualization.
+For instance, if we're discussing annual rainfall data for different regions,
+generate a CSV that I can then populate with data and use in Tableau to create a visualization.
 ```
 
 ```text
-Whenever I discuss a complex mathematical function, generate an input for the Desmos Graphing Calculator.
+Whenever I discuss a mathematical function, generate an input for the Desmos Graphing Calculator.
 
-For example, if I mention the function 'y = sin(x)', generate a corresponding input that can be directly used in Desmos to plot the function.
+For example, if I mention the function 'y = sin(x)', 
+generate a corresponding input that can be directly used in Desmos to plot the function.
 ```
 
 #### Recipe Pattern
@@ -147,7 +160,8 @@ Contextual statements:
 Examples:
 
 ```text
-I want to become a professional photographer. I know that I need to buy a camera and start selling my photos.
+I want to become a professional photographer.
+I know that I need to buy a camera and start selling my photos.
 
 Provide a complete sequence of steps for me. Fill in any missing steps.
 
@@ -158,7 +172,8 @@ Provide a complete sequence of steps for me. Fill in any missing steps.
 ```
 
 ```text
-I would like to drive to San Diego from San Francisco. I know that I want to go through Big Sur and stay close to the coast as much as possible.
+I would like to drive to San Diego from San Francisco. 
+I know that I want to go through Big Sur and stay close to the coast as much as possible.
 
 Provide a complete itinerary.
 ```
@@ -212,15 +227,18 @@ Contextual statements:
 Examples:
 
 ```text
-After providing me with a daily weather forecast, repeat the most important details and ask me if I want to hear about tomorrow's forecast.
+After providing me with a daily weather forecast, repeat the most important details.
+Ask me if I want to hear about tomorrow's forecast.
 ```
 
 ```text
-Following a summary of a recent sports match, reiterate the final score and the key players and ask me if I want details of the next game.
+Following a summary of a recent sports match, reiterate the final score and the key players.
+Ask me if I want details of the next game.
 ```
 
 ```text
-When finishing a recipe, repeat the main ingredients and cooking time, then ask me if I want to know about a suitable dessert.
+When finishing a recipe, repeat the main ingredients and cooking time.
+Ask me if I want to know about a suitable dessert.
 ```
 
 ### Input Semantics
@@ -239,7 +257,8 @@ Contextual statements:
 Examples:
 
 ```text
-When I say "3P12NS", I mean generate 3 random passwords of 12 characters in length with numbers and symbols. 
+When I say "3P12NS", I mean generate 3 random passwords of 12 characters in length,
+including numbers and symbols. 
 
 2P16N
 ```
@@ -249,7 +268,8 @@ When I say "tl;dr", I mean "your response was too long, make it shorter".
 ```
 
 ```text
-When I say "review", I mean give a detailed assessment of the product, covering its key elements, strengths, weaknesses, and your overall impression or recommendation.
+When I say "review", I mean give a detailed assessment of the product,
+covering its key elements, strengths, weaknesses, and your overall recommendation.
 ```
 
 #### Menu Actions Pattern
@@ -295,19 +315,21 @@ Contextual statements:
 Example:
 
 ```text
-Whenever I ask a question about digital marketing strategies, suggest a better version of the question that includes targeting specific audience demographics and the latest marketing trends. 
+Whenever I ask a question about marketing strategies, suggest a better version of the question.
 
 Ask me for the first question to refine.
 ```
 
 ```text
-Whenever I ask a question about weight loss, suggest a better version of the question that focuses on long-term sustainable practices like a balanced diet and regular exercise.
+Whenever I ask a question about weight loss, suggest a better version of the question.
+Your question will focus on sustainable practices like a balanced diet and regular exercise.
 
 Ask me for the first question to refine.
 ```
 
 ```text
-Whenever I ask a question about the best programming language to learn, suggest a better version of the question that considers the context like the job market, domain of interest, and previous programming experience.
+Whenever I ask a question about the best programming language to learn,
+suggest a better version of the question that considers the context like domain of interest.
 
 Ask me if I would like to use it instead.
 ```
@@ -324,7 +346,7 @@ Contextual statements:
 Examples:
 
 ```text
-For every programming task I give you, if there are alternative algorithms or techniques that could accomplish the task, list the best alternate approaches, along with their pros and cons. 
+For every programming task I give you, list the best alternate approaches with their pros and cons.
 
 Also, include the original way that I asked and prompt me on which approach I would like to use.
 ```
@@ -332,13 +354,14 @@ Also, include the original way that I asked and prompt me on which approach I wo
 ```text
 Whenever I ask for travel recommendations, determine the type of traveler I am from my requests. 
 
-List at least one alternative approach for my travel itinerary considering a different type of traveler and compare/contrast the approach with the original approach implied by my request to you.
+List at least one alternative approach for my travel itinerary.
+Consider a different type of traveler and compare/contrast the approach with the original approach.
 ```
 
 ```text
 When I ask you for cooking recipes, consider the ingredients and type of cuisine I've mentioned. 
 
-Propose alternative recipes that can be made with the same ingredients or suggest variations of the same dish from a different cuisine.
+Propose alternative recipes that can be made with the same ingredients or suggest variations.
 
 Compare their tastes, cooking methods, and nutritional values.
 ```
@@ -354,19 +377,22 @@ Contextual statements:
 Examples:
 
 ```text
-If I ask you to evaluate my symptoms, generate additional questions to understand the potential causes. Combine my answers to try to identify causes and suggest treatments.
+If I ask you to evaluate my symptoms, generate additional questions to understand the potential causes.
+
+Combine my answers to try to identify causes and suggest treatments.
 ```
 
 ```text
-When I ask about the impact of climate change on global agriculture, generate three more questions to clarify aspects I'm interested in.
+When I ask about the impact of climate change on agriculture, generate three more questions to clarify.
 
 Once these are answered, integrate the information to provide a detailed response to the initial query.
 ```
 
 ```text
-When I ask you about the implications of artificial intelligence on job markets, pose extra questions to determine my concerns. 
+When I ask you about the implications of artificial intelligence on job markets,
+pose extra questions to determine my concerns.
 
-After these questions are addressed, provide a comprehensive answer that encompasses the various aspects I've discussed.
+After these questions are addressed, provide an answer that encompasses the various aspects I've discussed.
 ```
 
 #### Refusal Breaker Pattern
@@ -380,15 +406,23 @@ Contextual statements:
 Examples:
 
 ```text
-If I ask you about personal data of a public figure and you can't answer due to privacy concerns, provide an explanation and suggest alternative queries that respect privacy rules but could provide me with public information about that person's career or publicly known activities.
+If I ask you about personal data of a public figure and you can't answer due to privacy concerns,
+provide an explanation and suggest alternative queries that respect privacy rules,
+but could provide me with public information about that person's career or publicly known activities.
 ```
 
 ```text
-Whenever I ask for medical advice and you are unable to provide it due to ethical constraints, explain the reason and suggest alternate questions that could lead to general information about the medical topic in question without giving direct advice.
+Whenever I ask for medical advice and you are unable to provide it due to ethical constraints,
+explain the reason and suggest alternate questions.
+
+Lead me to general information about the medical topic in question without giving direct advice.
 ```
 
 ```text
-If I ask for potentially harmful information and you refuse to answer, explain the rationale for your refusal and guide me towards safer and legally acceptable questions related to the subject matter, like the scientific principles involved or the laws governing such activities.
+If I ask for potentially harmful information and you refuse to answer,
+explain the rationale for your refusal and guide me towards safer and legally acceptable questions.
+
+Include the scientific principles involved or the laws governing such activities.
 ```
 
 ### Interaction
@@ -411,12 +445,13 @@ Examples:
 ```text
 You will generate two bullet points for each topic I provide.
 
-For each bullet point you generate, ask me if I prefer the first option, the second option, or neither.
+For each bullet point you generate, ask me which option I prefer.
 ```
 
 ```text
-I am going to paste emails into our conversation. You will summarize what each person's points are. 
- 
+I am going to paste emails into our conversation. 
+You will summarize what each person's points are. 
+
 List any questions or action items directed at me.
 ```
 
@@ -431,7 +466,8 @@ Contextual statements:
 Examples:
 
 ```text
-I want to improve my knowledge of world geography. Ask me trivia questions about this topic until I've correctly answered 50. 
+I want to improve my knowledge of world geography.
+Ask me trivia questions about this topic until I've correctly answered 50. 
 
 Begin with the first question.
 ```
@@ -460,9 +496,11 @@ Examples:
 ```text
 We are going to play a language-learning game.
 
-The rules are: I am a tourist visiting various countries, and each time you will tell me three phrases in the local language.
-
-I will try to guess the language and the meaning of the phrases. For every correct guess, I get a point.
+The rules are:
+- I am a tourist visiting various countries.
+- Each time you will tell me three phrases in the local language.
+- I will try to guess the language and the meaning of the phrases.
+- For every correct guess, I get one point.
 
 Start with the first country.
 ```
@@ -470,9 +508,10 @@ Start with the first country.
 ```text
 We are going to play a "global herd" game.
 
-The rules are simple: you ask me a question related to global customs, practices, or traditions.
-
-My task is to guess what I think is the most common answer around the world. For each correct guess that matches your researched answers, I get a point.
+The rules are simple:
+- You ask me a question related to global customs, practices, or traditions.
+- My task is to guess what I think is the most common answer around the world.
+- For each correct guess that matches your researched answers, I get a point.
 
 Start with the first question.
 ```
@@ -488,21 +527,22 @@ Contextual statements:
 Examples:
 
 ```text
-Keep generating unique cooking recipes using the ingredients I provide until I say "I'm full".
+Keep generating cooking recipes using the ingredients I provide until I say "I'm full".
 
-For each recipe, I'll give you a list of ingredients. Make sure to include all of them in the recipe.
+For each recipe, I'll give you a list of ingredients.
+Make sure to include all of them in the recipe.
 ```
 
 ```text
-Continuously generate unique short story plots based on a genre I specify until I tell you "THE END".
+Keep generating short story plots based on a genre I specify until I tell you "THE END".
 
-Before each plot, I will specify a genre and you should fit the plot within the confines of that genre.
+I will specify a genre and you should fit the plot within the confines of that genre.
 ```
 
 ```text
-Generate creative business ideas centered around a given industry indefinitely until I command "STOP".
+Generate creative business ideas centered around a given industry until I command "STOP".
 
-For each idea, I will provide an industry and a few key trends or technologies that should be incorporated into the idea.
+For each idea, I will provide an industry and a few key aspects that should be incorporated.
 ```
 
 ### Context Control
@@ -524,15 +564,18 @@ Contextual statements:
 Examples:
 
 ```text
-When discussing the plot of the novel, please consider only the main storyline and ignore any subplots or minor characters.
+When discussing the plot of the novel, please consider only the main storyline. 
+Ignore any subplots or minor characters.
 ```
 
 ```text
-In our discussion about climate change, only consider scientific facts and studies, please ignore any political debates or opinions.
+In our discussion about climate change, only consider scientific facts and studies.
+Please ignore any political debates or opinions.
 ```
 
 ```text
-For our discussion about artificial intelligence, only consider its applications in healthcare, and please ignore its applications in other industries such as finance or entertainment.
+For our discussion about artificial intelligence, only consider its applications in healthcare. 
+Please ignore its applications in other industries such as finance or entertainment.
 
 Let's start over with this new context.
 ```
@@ -575,19 +618,27 @@ Contextual statements:
 Examples:
 
 ```text
-After you generate a news article summary, compile a list of the key facts presented in your summary. Insert this fact list at the end of the summary.
+After you generate a news article summary, compile a list of the key facts. 
+Insert this fact list at the end of the summary.
 
-The list should include the main points that would affect the overall understanding of the news story if they were incorrect.
+Include the main points that would affect the overall understanding of the news story.
 ```
 
 ```text
-Whenever you provide a historical overview, create a list of the major events, dates, or figures included in your overview.
+Whenever you provide a historical overview, create a list to include: 
 
-This list should be inserted at the start of the overview and includes all the pivotal facts that, if wrong, would lead to a misunderstanding of the historical context.
+- major events
+- dates
+- figures
+- facts that, if wrong, could lead to a misunderstanding of the historical context
+
+This list should be inserted at the start of the overview.
 ```
 
 ```text
-When offering medical advice, list all the key facts related to the advice (symptoms, treatments, etc.) and insert this list in the middle of your response. This list should be comprised of the crucial facts that could misguide a user if they were incorrect.
+When offering medical advice, list all the key facts related to the advice.
+Insert this list in the middle of your response.
+This list should be comprised of the crucial facts that could misguide a user if they were incorrect.
 ```
 
 #### Reflection Pattern
@@ -601,25 +652,30 @@ Contextual statements:
 Examples:
 
 ```text
-When you analyze the recent trend of a stock and make a prediction about its future performance, please explain the factors you consider, the data sources you draw from, and the assumptions you make.
+When you analyze the recent trend of a stock and make a prediction about its future performance,
+please explain the factors you consider, the data sources you draw from, and the assumptions you make.
 
 Point out any potential uncertainties or risks in your prediction.
 ```
 
 ```text
-When you interpret the symbolism in a piece of literature, provide a clear explanation of your thought process.
+When you interpret the symbolism in a piece of literature,
+provide a clear explanation of your thought process.
 
-Please enumerate the contextual clues you used, the literary conventions you relied on, and any assumptions you made.
+Please enumerate the contextual clues and literary conventions you used.
 
 Acknowledge any alternative interpretations that could be plausible.
 ```
 
 ```text
-When you provide potential diagnoses based on presented symptoms, walk me through your reasoning.
+When you provide potential diagnoses based on presented symptoms, explain your reasoning.
 
-Describe the medical knowledge you're using, the correlations you're making between symptoms and diseases, and any assumptions you're making.
+Describe the following: 
+- medical knowledge you're using
+- correlations you're making between symptoms and diseases
+- any assumptions you're making
 
-Also, note the potential limitations of your assessment and emphasize the necessity for professional medical consultation.
+Note the potential limitations of your assessment.
 ```
 
 ## Prompting Techniques
@@ -653,11 +709,11 @@ Answer:
 ```text
 Beginning: "Once upon a time, in a kingdom far away, there was a brave knight named Sir Arthur."
 
-Ending: "After many challenging battles, Sir Arthur defeated the dragon, saved the kingdom, and proved his courage to all."
+Ending: "After many battles, Sir Arthur defeated the dragon and saved the kingdom."
 
 Beginning: "In the dense forests of the north, a cunning fox named Reynard lived."
 
-Ending: "Using his wit, Reynard outsmarted the wolf, saved his friends, and proved that brains could win over brawn."
+Ending: "Using his wit, Reynard outsmarted the wolf and proved that brains could win over brawn."
 
 Beginning: "In the heart of bustling New York, lived a timid pigeon named Pete."
 
