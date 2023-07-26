@@ -228,8 +228,8 @@ Contextual statements:
 Examples:
 
 ```text
-After providing me with a daily weather forecast, repeat the most important details.
-Ask me if I want to hear about tomorrow's forecast.
+At the end of your output, add the disclaimer: 
+"The responses this model generates should not be viewed as entirely accurate or reliable."
 ```
 
 ```text
@@ -311,7 +311,7 @@ Contextual statements:
 - Whenever I ask a question, suggest a better version of the question to use instead.
 - (Optional) Prompt me if I would like to use the better version instead.
 
-Example:
+Examples:
 
 ```text
 Whenever I ask a question about psychology, suggest a better version of the question.
