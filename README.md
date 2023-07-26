@@ -228,8 +228,8 @@ Contextual statements:
 Examples:
 
 ```text
-After providing me with a daily weather forecast, repeat the most important details.
-Ask me if I want to hear about tomorrow's forecast.
+At the end of your output, add the disclaimer: 
+"The responses this model generates should not be viewed as entirely accurate or reliable."
 ```
 
 ```text
