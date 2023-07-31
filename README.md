@@ -314,9 +314,7 @@ Contextual statements:
 Examples:
 
 ```text
-Whenever I ask a question about psychology, suggest a better version of the question.
-
-Ask me for the first question to refine.
+Whenever I ask a legal question, suggest a better version of the question.
 ```
 
 ```text
