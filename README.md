@@ -1,4 +1,4 @@
-# Awesome Prompting
+# 💬 Awesome Prompting
 
 Prompt engineering involves designing effective queries for large language models (LLMs) to generate desired outputs. This guide shares a catalog of patterns and techniques for getting better results from LLMs.
 
